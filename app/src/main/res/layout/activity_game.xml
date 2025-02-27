@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sky_backgroung">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutContainingJetAndBullet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/bullet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bullet"
+                app:layout_constraintBottom_toTopOf="@+id/jet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/bullet" />
+
+            <ImageView
+                android:id="@+id/jet"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="36dp"
+                android:src="@drawable/jet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:srcCompat="@drawable/jet" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="794dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.942"
+                tools:layout_editor_absoluteX="16dp">
+
+                <ImageView
+                    android:id="@+id/right_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/right" />
+
+                <ImageView
+                    android:id="@+id/left_button"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:srcCompat="@drawable/left" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/ufo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/ufo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.117"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ufo"
+                tools:srcCompat="@drawable/ufo" />
+
+            <ImageView
+                android:id="@+id/cloud3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="292dp"
+                android:src="@drawable/cloud2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.547"
+                tools:srcCompat="@drawable/cloud2" />
+
+            <ImageView
+                android:id="@+id/cloud1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/cloud2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.691"
+                app:srcCompat="@drawable/cloud2"
+                tools:srcCompat="@drawable/cloud2" />
+
+            <TextView
+                android:id="@+id/hs"
+                android:layout_width="61dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="244dp"
+                android:text="H S : "
+                android:textColor="@color/Main"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/scoreno"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hsno"
+                android:layout_width="89dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="244dp"
+                android:text="hsno"
+                android:textColor="@color/Main"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/cloud2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/cloud2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.36"
+                tools:srcCompat="@drawable/cloud2" />
+
+            <TextView
+                android:id="@+id/scoretext"
+                android:layout_width="89dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="16dp"
+                android:text="Scoure : "
+                android:textColor="@color/Main"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/scoreno"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/scoreno"
+                android:layout_width="89dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="16dp"
+                android:text="scoreno"
+                android:textColor="@color/Main"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
